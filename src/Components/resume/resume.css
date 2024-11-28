@@ -1,0 +1,47 @@
+/* ResumeViewer.css */
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #ffffff; /* Light text color for contrast */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .resume-container {
+    background-color: #1e1e1e; /* Darker background for the viewer */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    max-width: 800px; /* Max width for the viewer */
+    margin: auto; /* Center the container */
+  }
+  
+  .pdf-page {
+    margin: 10px 0; /* Space between pages */
+  }
+  
+  button {
+    background-color: #007bff; /* Button color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from link */
+    display: block; /* Make the link a block element */
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Space above the button */
+  }

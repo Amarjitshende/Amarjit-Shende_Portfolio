@@ -1,0 +1,251 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+  position: fixed;
+  /* background: #161513be; */
+  background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  z-index: 999;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 10px;
+  list-style: none;
+  gap: 40px;
+  font-size: 20px;
+}
+
+/* .navbar #nav_logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+} */
+
+.nav-title{
+    position: relative;
+    margin-right:20px;
+    margin-left: 0px;
+}
+.nav-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.nav-title img{
+  width: 160px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    /* bottom: 0;
+    right: 0; */
+    z-index: -1;
+}
+
+.nav-connect {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  margin-left: 50px;
+  margin-right: 200px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li img {
+  width: 50px;
+  display: flex;
+  margin: auto;
+}
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.anchor-link p{
+  width: 90px;
+}
+.nav-mob-close {
+  display: none;
+}
+
+.nav-mob-open {
+  display: none;
+}
+/* Navbar Styles */
+@media (max-width: 835px) {
+  .navbar {
+    position: fixed;
+    margin: 0px 20px; /* Adjusted margin for better spacing */
+    padding: 10px 0px;
+    margin-left: 5%;
+    width: calc(100% - 40px); /* Full width minus margins */
+    z-index: 10; /* Ensure navbar is above other content */
+  }
+
+  .nav-title{
+    position: relative;
+    margin-right: 100px;
+    margin-left: -50px;
+}
+.nav-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.nav-title img{
+  width: 160px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    /* bottom: 0;
+    right: 0; */
+    z-index: -1;
+}
+
+  .nav-connect {
+    display: none; /* Hide connect button on mobile */
+  }
+
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    margin-right: 30px;
+    right: 20px; /* Adjusted for better spacing */
+    top: 30px; /* Positioning from the top */
+    z-index: 15; /* Ensure it is above other elements */
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute; /* Changed to absolute for better positioning */
+    top: 20px; /* Positioning from the top */
+    right: 20px; /* Positioning from the right */
+    width: 30px; /* Fixed width */
+    z-index: 15; /* Ensure it is above other elements */
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    margin: auto;
+    padding: 90px 0px;
+    top: 0;
+    right: -320px; /* Start hidden */
+    gap: 80px; /* Reduced gap for better spacing */
+    background-color: #1f0016;
+    width: 40%; /* Adjusted width for better responsiveness */
+    height: auto; /* Full height */
+    z-index: 16; /* Ensure it is below the close button */
+    transition: right 0.5s ease; /* Smooth transition */
+  }
+
+  .nav-menu li {
+    font-size: 34px; /* Adjusted font size for better readability */
+    padding-left: 70px; /* Reduced padding for better spacing */
+    flex-direction: row;
+  }
+
+  .nav-menu li img {
+    width: 50px;
+    display: flex;
+    margin: auto;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    margin: 0px 10px; /* Adjusted margin for smaller screens */
+    padding: 10px 0px;
+    width: calc(100% - 20px); /* Full width minus margins */
+  }
+
+  /* .navbar #nav_logo {
+    width: 80px; 
+    height: 80px; 
+  } */
+
+  .nav-title{
+    position: relative;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+.nav-title h1{
+    padding: 0px 30px;
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.nav-title img{
+  width: 70px;
+    position: absolute;
+    top: 33px;
+    left: 60px;
+    /* bottom: 0;
+    right: 0; */
+    z-index: -1;
+}
+
+  .nav-connect {
+    display: none; /* Hide connect button on mobile */
+  }
+
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 20px; /* Adjusted for better spacing */
+    top: 20px; /* Positioning from the top */
+    z-index: 15; /* Ensure it is above other elements */
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute; /* Changed to absolute for better positioning */
+    top: 20px; /* Positioning from the top */
+    right: 20px; /* Positioning from the right */
+    width: 30px; /* Fixed width */
+    z-index: 15; /* Ensure it is above other elements */
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    margin: auto;
+    padding: 50px 0px;
+    top: 0;
+    right: -350px; /* Start hidden */
+    gap: 60px; /* Reduced gap for better spacing */
+    background-color: #1f0016;
+    width: 50%; /* Adjusted width for better responsiveness */
+    height: auto; /* Full height */
+    z-index: 16; /* Ensure it is below the close button */
+    transition: right 0.5s ease; /* Smooth transition */
+  }
+
+  .nav-menu li {
+    font-size: 20px; /* Adjusted font size for better readability */
+    padding-left: 50px; /* Reduced padding for better spacing */
+    flex-direction: row;
+  }
+}
