@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "@react-pdf-viewer/core";
 import './resume.css'; 
-import pdf from '../../assets/Amarjit Shende_CV.pdf/';
+import pdf from '../../assets/Amarjit Shende#CV.pdf/';
 
 
 

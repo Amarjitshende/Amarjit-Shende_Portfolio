@@ -10,7 +10,7 @@ const Hero = () => {
         <p>Aspiring Web Developer | HTML, CSS, JavaScript, React.js | Passionate About Creating Responsive & User-Friendly Websites</p>
         <div className="hero-action">
             <a className="hero-connect" href='https://www.linkedin.com/in/amarjit-shende-39b89b274/' offset={50}>Connect me on LinkedIn</a>
-            <a href='https://drive.google.com/file/d/18XkIoqdlZzINeOpKZp5spad3tT3E7tKl/view?usp=drivesdk' className="hero-resume">My Resume</a>
+            <a href='https://drive.google.com/file/d/1dBQJ8WSCZHMAbCzqk-quQ1MBqfJZFHyq/view?usp=sharing' className="hero-resume">My Resume</a>
         </div>
     </div>
   )
